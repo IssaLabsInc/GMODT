@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GMODT.VIP</title>
+<script src="/node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+  }
+  #section1 {
+    padding-left: 10%;
+    justify-content: left;
+    background-color: #222;
+  }
+  #section2 {
+    text-align: right;
+    padding-right: 10%;
+    justify-content: right;
+    background-color: #444;
+  }
+  #section3 {
+    padding-left: 10%;
+    justify-content: left;
+    background-color: #666;
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('#scroll-container'),
+      smooth: true
+    });
+  });
+</script>
+</head>
+<body>
+  <div id="scroll-container" data-scroll-container>
+    <div class="section" id="section1" data-scroll-section>
+      <div data-scroll>
+        <h1>Drop 1 - DMV</h1>
+        <p>ACCESS</p>
+      </div>
+    </div>
+    <div class="section" id="section2" data-scroll-section>
+      <div data-scroll>
+        <h1>Drop 2 - NYC</h1>
+        <p>SOON.</p>
+      </div>
+    </div>
+    <div class="section" id="section3" data-scroll-section>
+      <div data-scroll>
+        <h1>Drop 3 - LAX</h1>
+        <p>SOON.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
